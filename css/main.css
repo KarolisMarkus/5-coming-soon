@@ -134,7 +134,7 @@ footer {
         }
 
         #content  form > input:valid{
-            background-color: red;
+            /* background-color: red; */
         }
 
     
