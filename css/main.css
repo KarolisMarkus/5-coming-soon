@@ -6,47 +6,135 @@ body * {
     box-sizing: border-box;
 }
 
-    .hero-background {
-        background-color: aqua;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero-background {
+    background-image: url(../img/banner-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.hero-content {
+    display: inline-block;
+    width: 500px;
+    margin: 150px calc( (100% - 500px) / 2 ) 20px;
+    text-align: center;
+}
+    #hero .hero-content > * {
+        display: inline-block;
+        width: 100%;
     }
-    .hero-content {
-        width: 500px;
-        margin: 40px calc( (100% - 500px ) / 2) 20px;
+    #hero .logo {
+        background-image: url(../img/logo.png);
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    #hero h1 {
+        margin: 40px 0 20px;
+        text-transform: uppercase;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    #hero p {
+        margin: 0 0 20px;
+        font-size: 16px;
+        line-height: 20px;
+        color: #777;
+    }
+    #hero .clock {
+        margin: 40px 0 60px 0;
+        color:white;
+    }
+        #hero .clock > .clock-block {
+            display: inline-block;
+            float: left;
+            width: 25%;
+        }
+            #hero .clock > .clock-block > .value {
+                font-size: 36px;
+            }
+            #hero .clock > .clock-block > .title {
+                font-size: 20px;
+            }
+
+#content {
+    display: inline-block;
+    width: 100%;
+}
+    #content .container {
+        display: inline-block;
+        width: 800px;
+        margin: 40px calc( (100% - 800px) / 2 ) 20px;
+    }
+        #content .container > .left {
+            display: inline-block;
+            float: left;
+            width: 50%;
+        }
+        #content .container > .right {
+            display: inline-block;
+            float: left;
+            width: 50%;
+            padding-left: 10%;
+        }
+        #content .form2 {
+            margin:20px 0;
+    }
+
+footer {
+    background-color: #75C6FB;
+    text-align: center;
+}
+    footer > .social {
+        display: inline-block;
+        width: 800px;
+        margin: 20px calc( (100% - 800px) / 2 );
+        padding-bottom: 20px;
+        border-bottom: 1px solid #FFF;
+    }
+    footer > .footer-content {
+        display: inline-block;
+        width: 800px;
+        margin: 0 calc( (100% - 800px) / 2 ) 40px;
+    }
+    footer > div > i {
+        font-size: 20px;
+        padding:5px;
+    }    
+    
+        footer > div > i:hover{
+                background-color: black;
+                color: #75C6FB;
+                cursor: pointer;
+        }
+
+    .form2 {
+        width:100%;
         display: inline-block;
     }
-
-    #hero .logo{
-
+    .right > div > form > input {
+        display: inline-block;
+        float: left;
+        width:50%;
+    } 
+        .right > div > div {
+        float:right;
     }
-
-    #hero h1{
-
+    #content  form > input {
+        color: black;
+        border-bottom: 1px solid black;
     }
-
-    #hero p{
-
-    }
-
-    #hero .clock{
-
-    }
-        #hero .clock > .clock-block{
-
+        #content  form > input::placeholder{
+            color: black;
         }
-            #hero .clock > .clock-block > .value{
 
-            }
-            #hero .clock > .clock-block > .title{
-
-            }
-
-
-    #hero form{
-
-    }
-        #hero form > input{
-
+        #content  form > input:valid{
+            background-color: red;
         }
-        #hero form > .btn{
 
-        }
+    
