@@ -64,7 +64,24 @@ body {
             #hero .clock > .clock-block > .title {
                 font-size: 20px;
             }
-
+            
+    @media ( max-width: 640px ) {
+        .hero-content {
+            width: 100%;
+            margin: 40px 0 20px;
+            padding: 0 20px;
+        }
+    }
+    @media ( max-width: 480px ) {
+        #hero .clock {
+            margin-top: 0;
+        }
+        #hero .clock > .clock-block {
+            width: 50%;
+            margin-top: 40px;
+        }
+    }
+            
 #content {
     display: inline-block;
     width: 100%;
@@ -105,10 +122,31 @@ body {
                 #content  form > input:valid{
                     /* background-color: red; */
                 }
+    
 
-            /* .btn {
-                margin-top:20px;
-            } */
+    @media ( max-width: 900px ) {
+        #content .container {
+            width: 540px;
+            margin: 40px calc( (100% - 540px) / 2 ) 20px;
+        }
+    }
+    @media ( max-width: 640px ) {
+        #content .container {
+            width: 100%;
+            margin: 40px 0 20px;
+        }
+            #content .container > .left {
+                width: 100%;
+                padding: 0 40px;
+            }
+            #content .container > .right {
+                width: 100%;
+                padding-left: 0%;
+                padding: 40px;
+            }
+    }
+    
+            
 
 footer {
     background-color: #75C6FB;
@@ -159,7 +197,29 @@ footer {
         box-shadow: 0 1px 2px rgba(0,0,0,0.3);
     }
     
-
+    @media ( max-width: 900px ) {
+        footer > .social {
+            width: 540px;
+            margin: 20px calc( (100% - 540px) / 2 );
+        }
+        footer > .footer-content {
+            width: 540px;
+            margin: 0 calc( (100% - 540px) / 2 ) 40px;
+        }
+    }
+    @media ( max-width: 640px ) {
+        footer > .social {
+            width: 100%;
+            margin: 20px 0;
+        }
+        footer > .footer-content {
+            width: 100%;
+            margin: 0 0 40px;
+        }
+        footer > .social > .little-round-shit {
+            display: none;
+        }
+    }
 
 
     
