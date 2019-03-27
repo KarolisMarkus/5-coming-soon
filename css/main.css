@@ -15,7 +15,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
 }
 .hero-content {
     display: inline-block;
@@ -26,6 +26,9 @@ body {
     #hero .hero-content > * {
         display: inline-block;
         width: 100%;
+    }
+    #hero .hero-content > form > input {
+        width:80%;
     }
     #hero .logo {
         background-image: url(../img/logo.png);
@@ -65,6 +68,7 @@ body {
 #content {
     display: inline-block;
     width: 100%;
+    color: #9F9999;
 }
     #content .container {
         display: inline-block;
@@ -82,13 +86,34 @@ body {
             width: 50%;
             padding-left: 10%;
         }
-        #content .form2 {
-            margin:20px 0;
-    }
+            #content .form2 {
+                margin:20px 0;
+                width:100%;
+                display: inline-block;
+            }    
+            .right > div > form > input {
+                display: inline-block;
+                float: left;
+                width: 48%;
+            }
+                form > textarea{
+                    width: 100%;
+                } 
+                .right > div > div {
+                float:right;
+            }
+                #content  form > input:valid{
+                    /* background-color: red; */
+                }
+
+            .btn {
+                margin-top:20px;
+            }
 
 footer {
     background-color: #75C6FB;
     text-align: center;
+    
 }
     footer > .social {
         display: inline-block;
@@ -96,6 +121,8 @@ footer {
         margin: 20px calc( (100% - 800px) / 2 );
         padding-bottom: 20px;
         border-bottom: 1px solid #FFF;
+        position: relative;
+
     }
     footer > .footer-content {
         display: inline-block;
@@ -112,29 +139,26 @@ footer {
                 color: #75C6FB;
                 cursor: pointer;
         }
+    .footer-content > img {
+        margin-bottom:20px;
+    }
 
-    .form2 {
-        width:100%;
-        display: inline-block;
+    .social > .little-round-shit {
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        line-height: 35px;
+        color: #FFF;
+        text-decoration: none;
+        background-color: #EA1D62;
+        border-radius: 50%;
+        position: absolute;
+        top: -40px;
+        right: 0px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.3);
     }
-    .right > div > form > input {
-        display: inline-block;
-        float: left;
-        width:50%;
-    } 
-        .right > div > div {
-        float:right;
-    }
-    #content  form > input {
-        color: black;
-        border-bottom: 1px solid black;
-    }
-        #content  form > input::placeholder{
-            color: black;
-        }
 
-        #content  form > input:valid{
-            /* background-color: red; */
-        }
+
 
     
