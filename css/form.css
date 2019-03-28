@@ -11,20 +11,15 @@ form{
         line-height: 20px;
         resize: none;
         margin-bottom: 30px;
-        
     }
-
-
-
         form > input::placeholder, form > textarea::placeholder{
             color:#9F9999;
         }
         form > input:focus, form > textarea:focus {
-        outline: none;
-        border-bottom: 3px solid rgb(38, 161, 38);
-        margin-bottom: 28px;
+            outline: none;
+            border-bottom: 3px solid rgb(38, 161, 38);
+            margin-bottom: 28px;
         }
-
     .form-white {
         color: #fff;
         border-bottom: 1px solid #fff
