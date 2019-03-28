@@ -109,7 +109,6 @@ body {
                 display: inline-block;
             }    
             .right > div > form > input {
-                display: inline-block;
                 float: left;
                 width: 48%;
             }
@@ -119,9 +118,10 @@ body {
                 .right > div > div {
                 float:right;
             }
-                #content  form > input:valid{
-                    /* background-color: red; */
-                }
+
+    .mouse-container {
+        margin-top: 40px;
+    }
     
 
     @media ( max-width: 900px ) {

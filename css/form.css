@@ -1,6 +1,6 @@
 form{
 }
-    form > input, textarea{
+    form > input, form > textarea {
         width: 100%;
         padding: 10px 0px;
         background:transparent;
@@ -16,7 +16,7 @@ form{
 
 
 
-        form > input::placeholder+textarea::placeholder{
+        form > input::placeholder, form > textarea::placeholder{
             color:#9F9999;
         }
         form > input:focus, form > textarea:focus {
